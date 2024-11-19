@@ -50,10 +50,10 @@ const ContactSection = () => {
                     Email
                   </h3>
                   <a 
-                    href="mailto:your.email@example.com" 
+                    href="mailto:castillop92@gmail.com" 
                     className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
                   >
-                    your.email@example.com
+                    castillop92@gmail.com
                   </a>
                 </div>
               </div>
@@ -65,7 +65,7 @@ const ContactSection = () => {
                     Location
                   </h3>
                   <p className="text-neutral-600 dark:text-neutral-400">
-                    Your City, Country
+                    Houston, TX, USA
                   </p>
                 </div>
               </div>
@@ -78,7 +78,7 @@ const ContactSection = () => {
               </h3>
               <div className="flex space-x-4">
                 <a 
-                  href="https://linkedin.com/in/yourprofile" 
+                  href="https://www.linkedin.com/in/petecastillo92/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-2 border border-neutral-300 dark:border-neutral-700 hover:border-neutral-900 dark:hover:border-neutral-100 transition-colors"
@@ -86,7 +86,7 @@ const ContactSection = () => {
                   <Linkedin className="w-5 h-5 text-neutral-900 dark:text-neutral-100" />
                 </a>
                 <a 
-                  href="https://github.com/yourprofile" 
+                  href="https://github.com/PJC2010" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-2 border border-neutral-300 dark:border-neutral-700 hover:border-neutral-900 dark:hover:border-neutral-100 transition-colors"

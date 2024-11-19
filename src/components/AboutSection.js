@@ -91,11 +91,7 @@ const AboutSection = () => {
           {/* Image Area */}
           <div className="relative">
             <div className="aspect-square bg-neutral-200 dark:bg-neutral-800 relative">
-              <img 
-                src="/api/placeholder/600/600" 
-                alt="Professional headshot" 
-                className="object-cover w-full h-full"
-              />
+              
               {/* Decorative elements */}
               <div className="absolute -bottom-4 -right-4 w-64 h-64 border border-neutral-900 dark:border-neutral-100 -z-10"></div>
               <div className="absolute -top-4 -left-4 w-32 h-32 border border-neutral-900 dark:border-neutral-100 -z-10"></div>

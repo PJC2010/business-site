@@ -14,14 +14,12 @@ const HeroWithNav = () => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
-              YN
+              PC
             </div>
 
             {/* Desktop Navigation */}
             <div className="hidden sm:flex items-center space-x-8">
-              <a href="#work" className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 text-sm">
-                Work
-              </a>
+              
               <a href="#about" className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 text-sm">
                 About
               </a>
@@ -80,12 +78,12 @@ const HeroWithNav = () => {
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <div className="mb-8">
             <span className="text-sm uppercase tracking-widest text-neutral-500 dark:text-neutral-400">
-              Web Development & Design
+              Data Analytics & Web Design
             </span>
           </div>
           
           <h1 className="text-6xl md:text-8xl font-light mb-6 text-neutral-900 dark:text-neutral-100 tracking-tight">
-            Your Name
+            Pete Castillo
           </h1>
           
           <p className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
@@ -94,7 +92,9 @@ const HeroWithNav = () => {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button className="group px-8 py-3 bg-transparent border border-neutral-300 dark:border-neutral-700 hover:border-neutral-900 dark:hover:border-neutral-100 rounded-none text-neutral-900 dark:text-neutral-100 font-light flex items-center gap-2 transition-all duration-300">
-              View Portfolio
+            <a href="#services" className="block px-3 py-2 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 text-sm">
+                Services
+              </a>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
             
