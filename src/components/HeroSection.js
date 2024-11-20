@@ -99,7 +99,12 @@ const HeroWithNav = () => {
             </button>
             
             <button className="px-8 py-3 bg-transparent text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 rounded-none font-light transition-colors duration-300">
+              <a href="#contact" >
               Contact Me
+
+              </a>
+              
+              
             </button>
           </div>
         </div>
