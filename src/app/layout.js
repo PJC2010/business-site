@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'PC',
+  title: 'PC | Data Analytics Services',
   description: 'Data Science and Web Development Portfolio',
 }
 
