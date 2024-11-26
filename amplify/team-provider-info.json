@@ -17,6 +17,15 @@
           "appId": "d1yq2kn10k1qpk",
           "type": "cicd"
         }
+      },
+      "function": {
+        "businesssitecd2b486f": {
+          "deploymentBucketName": "amplify-businesssite-dev-5b5aa-deployment",
+          "s3Key": "amplify-builds/businesssitecd2b486f-4c6631757a6c504b322b-build.zip"
+        }
+      },
+      "api": {
+        "api89ec88df": {}
       }
     }
   }

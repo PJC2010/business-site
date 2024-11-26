@@ -1,4 +1,27 @@
 {
+  "api": {
+    "api89ec88df": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "businesssitecd2b486f"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "businesssitecd2b486f": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
   "hosting": {
     "amplifyhosting": {
       "service": "amplifyhosting",
@@ -6,6 +29,22 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_businesssitecd2b486f_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "businesssitecd2b486f"
+        }
+      ]
+    },
+    "AMPLIFY_function_businesssitecd2b486f_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "businesssitecd2b486f"
+        }
+      ]
+    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {
