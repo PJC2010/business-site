@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-4">
             <h2 className="text-xl font-light text-neutral-900 dark:text-neutral-100">
-              Pete Castillo
+              Your Name
             </h2>
             <p className="text-sm text-neutral-600 dark:text-neutral-400">
               Data Scientist | Web Developer
@@ -63,7 +63,7 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className="space-y-2">
-              {['About', 'Services', 'Contact'].map((item) => (
+              {['About', 'Services', 'Portfolio', 'Contact'].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase()}`}
@@ -111,13 +111,13 @@ const Footer = () => {
                 Available for freelance projects and full-time opportunities
               </p>
               <a
-                href="mailto:castillop92@gmail.com"
+                href="mailto:your.email@example.com"
                 className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 block transition-colors"
               >
-                
+                your.email@example.com
               </a>
               <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                
+                Based in Your Location
               </p>
             </div>
           </div>
@@ -129,7 +129,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex justify-between items-center">
             <p className="text-sm text-neutral-600 dark:text-neutral-400">
-              © {currentYear} Pete Castillo. All rights reserved.
+              © {currentYear} Your Name. All rights reserved.
             </p>
             
             <button
