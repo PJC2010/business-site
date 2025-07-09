@@ -25,7 +25,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="mailto:your.email@example.com"
+                href="mailto:castillop92@gmail.com"
                 className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 transition-colors"
               >
                 <Mail className="w-5 h-5" />
@@ -111,14 +111,12 @@ const Footer = () => {
                 Available for freelance projects and full-time opportunities
               </p>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:castillop92@gmail.com"
                 className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 block transition-colors"
               >
-                your.email@example.com
+                castillop92@gmail.com
               </a>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                Based in Your Location
-              </p>
+              
             </div>
           </div>
         </div>
@@ -129,7 +127,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex justify-between items-center">
             <p className="text-sm text-neutral-600 dark:text-neutral-400">
-              © {currentYear} Your Name. All rights reserved.
+              © {currentYear} Pete Castillo. All rights reserved.
             </p>
             
             <button

@@ -13,18 +13,17 @@ const ProjectsSection = () => {
       codeUrl: "https://github.com/PJC2010/VillageRefillProtocolAppV1.git" // <-- IMPORTANT: REPLACE
     },
     {
-      title: "Customer Churn Prediction",
-      description: "A placeholder project. I developed a machine learning model to predict customer churn, enabling proactive retention strategies and reducing attrition by 15%.",
-      tags: ["Python", "Scikit-learn", "Pandas"],
-      liveUrl: "#",
-      codeUrl: "#"
+      title: "Streamlit Med Adherence Dashboard",
+      description: "This project is an interactive web application designed to tackle the critical issue of medication non-adherence. Using Python, Streamlit, and Plotly, I built a dashboard that connects directly to a Google BigQuery database to provide a near real-time view of adherence metrics. Key features include interactive filtering by market, payer, and time, as well as visualizations of Key Performance Indicators (KPIs) like Proportion of Days Covered (PDC) and month-over-month trend analysis against CMS Star Rating thresholds. The goal is to empower users to identify and close gaps in care effectively.",
+      tags: ["Python", "BigQuery","Streamlit", "Pandas"],
+      codeUrl: "https://github.com/PJC2010/medadhdash.git"
     },
     {
-      title: "Sales Analysis Dashboard",
-      description: "Another placeholder project. I designed and built an interactive sales dashboard in Tableau to track key performance indicators and provide actionable insights for the executive team.",
-      tags: ["Tableau", "SQL"],
-      liveUrl: "#",
-      codeUrl: "#"
+      title: "Automated Worklist Analysis & Reporting Pipeline",
+      description: "This Python script is the engine of a fully automated reporting pipeline for weekly medical adherence worklists that saves about 5 hours of manual work each week. It processes raw data from Excel files to generate detailed reports featuring pivot tables and visualizations. A key analytical feature is the week-over-week comparison that tracks new and resolved escalations. The process is fully automated from start to finish: once the script creates the reports, a Power Automate flow takes over to distribute them. The flow intelligently reads the file's market and date, emails the report to the corresponding stakeholders, and archives it in the correct SharePoint folder. This system eliminates manual work in data analysis, reporting, and distribution.",
+      tags: ["Excel", "Python", "Power Automate"],
+    
+      codeUrl: "https://github.com/PJC2010/Escalation-Python.git"
     }
   ];
 
