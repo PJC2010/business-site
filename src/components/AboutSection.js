@@ -91,14 +91,14 @@ const AboutSection = () => {
 
           {/* Image Area */}
           <div className="relative">
-            <div className="aspect-square bg-neutral-200 dark:bg-neutral-800 relative">
+            <div className="aspect-square bg-neutral-200 dark:bg-neutral-800 relative p-16">
               
               <Image
                 src="/689A29BE-F31A-4032-BA10-6DFE3A055048.jpeg" // This path is relative to the `public` folder
                 alt="A professional headshot"
                 layout="fill"
-                
-                className="z-10 object-position-top" // Make sure image is on top
+                objectFit='contain'
+                className="z-10" // Make sure image is on top
               />
               
               {/* Decorative elements */}

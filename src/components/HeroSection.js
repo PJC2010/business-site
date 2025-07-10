@@ -26,6 +26,9 @@ const HeroWithNav = () => {
               <a href="#services" className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 text-sm">
                 Services
               </a>
+              <a href="#projects" className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 text-sm">
+                Projects
+              </a>
               <a href="#contact" className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 text-sm">
                 Contact
               </a>
