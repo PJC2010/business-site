@@ -6,6 +6,12 @@ import { Github, ExternalLink } from 'lucide-react';
 const ProjectsSection = () => {
   const projects = [
     {
+        title: "This Website!",
+        description: "With the help of Next.js as a framework and Vercel for hosting and deployment, I created this website to help display my domain knowledge in Web Development",
+        tags: ["JavaScript", "HTML5", "Next.js"],
+        
+      },
+    {
       title: "Medication Refill Protocol Tool",
       description: "Developed a web application to streamline the VillageMD medication refill protocol. This tool empowers administrative staff to efficiently and accurately approve or deny routine refills by automating the protocol's strict decision-making criteria, reducing processing time and ensuring compliance.",
       tags: ["JavaScript", "HTML5", "CSS3"],
