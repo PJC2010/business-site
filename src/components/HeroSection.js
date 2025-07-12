@@ -50,14 +50,15 @@ const HeroWithNav = () => {
         {mobileMenuOpen && (
           <div className="sm:hidden bg-neutral-50 dark:bg-neutral-950 border-b border-neutral-200 dark:border-neutral-800">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="#work" className="block px-3 py-2 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 text-sm">
-                Work
-              </a>
+              
               <a href="#about" className="block px-3 py-2 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 text-sm">
                 About
               </a>
               <a href="#services" className="block px-3 py-2 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 text-sm">
                 Services
+              </a>
+              <a href="#projects" className="block px-3 py-2 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 text-sm">
+                Projects
               </a>
               <a href="#contact" className="block px-3 py-2 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 text-sm">
                 Contact
@@ -81,7 +82,7 @@ const HeroWithNav = () => {
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <div className="mb-8">
             <span className="text-sm uppercase tracking-widest text-neutral-500 dark:text-neutral-400">
-              Data Analytics & Web Design
+            Data Science & Application Development
             </span>
           </div>
           
@@ -90,7 +91,7 @@ const HeroWithNav = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-            Creating minimal and functional digital experiences through thoughtful design and development.
+          I design, build, and deploy custom data solutions that streamline operations, reveal key insights, and drive measurable results for businesses of all sizes.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">

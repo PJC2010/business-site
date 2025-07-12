@@ -40,8 +40,8 @@ const AboutSection = () => {
             </p>
             
             <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              I specialize in creating predictive models and interactive data visualizations that empower organizations to make smarter, data-informed decisions.
-            </p>
+  I specialize in creating predictive models and interactive data visualizations that empower organizations to make smarter, data-informed decisions. Whether you are a small business needing your first data dashboard or a large enterprise looking to deploy a scalable ML pipeline, I have the expertise to deliver robust and reliable solutions.
+</p>
 
             <div className="space-y-4">
               <h3 className="text-sm uppercase tracking-wider text-neutral-500 dark:text-neutral-400">

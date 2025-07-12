@@ -25,18 +25,19 @@ const ServicesSection = () => {
       ],
       primaryService: true
     },
-    {
-      icon: <Brain className="w-8 h-8" />,
-      title: "Machine Learning Solutions",
-      description: "Leverage AI and machine learning to predict trends and automate decisions.",
-      features: [
-        "Predictive Modeling",
-        "Pattern Recognition",
-        "Classification & Clustering",
-        "Natural Language Processing"
-      ],
-      primaryService: true
-    },
+    // In your services array within ServicesSection.js
+{
+  icon: <Brain className="w-8 h-8" />,
+  title: "Machine Learning Solutions",
+  // UPDATED DESCRIPTION
+  description: "From automating routine tasks to uncovering predictive insights, I build and deploy scalable machine learning models that boost efficiency and create a competitive advantage.",
+  features: [
+    "Predictive Modeling (Churn, Sales Forecasting)", // Make it specific
+    "Process Automation & Optimization", // Appeals to large orgs
+    "Natural Language Processing (NLP)",
+    "Custom AI Tool Development" // Appeals to small businesses
+  ]
+},
     {
       icon: <Code className="w-8 h-8" />,
       title: "Web Application Development",
