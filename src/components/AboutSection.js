@@ -71,7 +71,7 @@ const AboutSection = () => {
              <div className="relative w-full max-w-sm">
                 <div className="aspect-square bg-neutral-200 dark:bg-neutral-800 relative p-8 rounded-full overflow-hidden">
                     <Image
-                        src="/headshot.jpeg"
+                        src="/headshot_2.jpg"
                         alt="A professional headshot"
                         layout="fill"
                         objectFit="revert-layer"

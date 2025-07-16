@@ -1,6 +1,7 @@
 "use client"
 
 import React from 'react';
+import Image from 'next/image'
 
 const ExperienceSection = () => {
   const experiences = [
@@ -8,6 +9,8 @@ const ExperienceSection = () => {
       company: "Packeze",
       role: "E-commerce Data Analyst (Part-Time)",
       period: "Dec 2024 - Present",
+      logoUrl: "/logos/packeze-logo.png",
+      companyUrl: "https://packeze.com",
       description: "Driving growth for an e-commerce startup by leveraging sales data, automating key reports, and building scalable data infrastructure from the ground up.",
       responsibilities: [
         "Engineered automated reporting solutions using Python and Power Automate to track weekly revenue and sales performance.",
@@ -19,6 +22,8 @@ const ExperienceSection = () => {
     {
       company: "VillageMD",
       role: "Healthcare Data Analyst",
+      logoUrl: "/logos/village-logo.webp",
+      companyUrl: "https://villagemd.com",
       period: "Oct 2023 - Present",
       description: "Specializing in transforming complex clinical and operational data into actionable strategies that improve patient outcomes and drive financial performance in a value-based care model.",
       responsibilities: [
@@ -31,6 +36,8 @@ const ExperienceSection = () => {
     {
       company: "VillageMD",
       role: "Supervisor, Clinical Pharmacy Operations",
+      logoUrl: "/logos/village-logo.webp",
+      companyUrl: "https://villagemd.com",
       period: "Apr 2020 - Oct 2023",
       description: "Led a team of pharmacy professionals, using data analytics to guide strategic decisions, optimize daily operations, and improve team efficiency.",
       responsibilities: [
@@ -83,6 +90,23 @@ const ExperienceSection = () => {
                     <p className="text-md text-neutral-600 dark:text-neutral-300 mb-4">
                       {exp.company}
                     </p>
+                    <div className="flex items-center gap-3 mb-4">
+                      <Image
+                        src={exp.logoUrl}
+                        alt={`${exp.company} logo`}
+                        width={24}
+                        height={24}
+                        className="rounded-full bg-white" // bg-white ensures visibility on dark backgrounds
+                      />
+                      <a 
+                        href={exp.companyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-md font-semibold text-neutral-600 dark:text-neutral-300 hover:underline"
+                      >
+                        {exp.company}
+                      </a>
+                    </div>
                     <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-6">
                       {exp.description}
                     </p>

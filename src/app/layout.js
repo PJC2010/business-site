@@ -1,4 +1,7 @@
 import './globals.css'
+import Header from '@/components/Header'; // Import the new Header
+import Footer from '@/components/Footer'; 
+import GoogleAnalytics from '@/components/GoogleAnalytics';  // Import the Footer
 
 export const metadata = {
   title: 'PC | Data Analytics Services',
@@ -8,7 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <GoogleAnalytics />
+      <body className="bg-white dark:bg-neutral-950">
+        <Header />
+        <main>{children}</main>
+        
+      </body>
     </html>
   )
 }
