@@ -7,8 +7,15 @@ const ProjectsSection = () => {
   const projects = [
     {
         title: "This Website!",
-        description: "With the help of Next.js as a framework and Vercel for hosting and deployment, I created this website to help display my domain knowledge in Web Development",
+        description: "With the help of Next.js as a framework and Vercel for hosting and deployment, I created this website to help display my domain knowledge in Web Development.",
         tags: ["JavaScript", "HTML5", "Next.js"],
+        
+      },
+    {
+        title: "Proving the Value of Proactive Patient Care",
+        description: "Answered a critical business question for a value-based care provider: Do proactive patient outreach programs pay for themselves? By modeling data from systems like Snowflake and Salesforce, this analysis demonstrated that a targeted intervention program not only improved patient health (fewer hospitalizations) but also delivered a significant financial return of $1.2 million. This project provides a clear, data-driven case for investing in preventative care.",
+        tags: ["SQL", "HTML5", "Python", "Salesforce"],
+        codeUrl: "https://github.com/PJC2010/VMD_Cost_Savings"
         
       },
     {
