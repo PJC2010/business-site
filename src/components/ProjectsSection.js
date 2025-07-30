@@ -18,6 +18,13 @@ const ProjectsSection = () => {
         codeUrl: "https://github.com/PJC2010/VMD_Cost_Savings"
         
       },
+      {
+        title: "Proactive Healthcare with Predictive Analytics",
+        description: "To address the dual challenge of member health and financial performance tied to medication adherence, I developed a predictive analytics model using Python to analyze data from Salesforce and medical/pharmacy claims. This model proactively identifies members at high risk of missing refills for critical conditions like diabetes, hypertension, and high cholesterol, generating a prioritized outreach list that enables our clinical teams to deliver targeted support precisely when it's needed most. The initiative was a major success, driving a 7-percentage-point increase in adherence, elevating our CMS Star Rating from 3 to 4 stars, and securing an estimated $15 million in annual bonus revenue, proving the powerful link between proactive data science and tangible business outcomes.",
+        tags: ["SQL", "Snowflake", "Python", "Salesforce"],
+        codeUrl: "https://github.com/PJC2010/Medication_Predictive_Modeling"
+        
+      },
     {
       title: "Medication Refill Protocol Tool",
       description: "Developed a web application to streamline the VillageMD medication refill protocol. This tool empowers administrative staff to efficiently and accurately approve or deny routine refills by automating the protocol's strict decision-making criteria, reducing processing time and ensuring compliance.",
