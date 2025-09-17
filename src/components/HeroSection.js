@@ -13,7 +13,7 @@ const HeroSection = () => {
           muted 
           className="w-full h-full object-cover"
         >
-          <source src="/hero-video-final.mp4" type="video/mp4" />
+          <source src="public/hero-video-final.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* Dark overlay */}
