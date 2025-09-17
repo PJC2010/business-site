@@ -60,3 +60,5 @@ amplifytools.xcconfig
 .secret-*
 **.sample
 #amplify-do-not-edit-end
+#Ignore large media files
+/public/hero-video-final.mp4
