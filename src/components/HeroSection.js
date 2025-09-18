@@ -11,9 +11,10 @@ const HeroSection = () => {
           autoPlay 
           loop 
           muted 
+          playsInline
           className="w-full h-full object-cover"
         >
-          <source src="https://asqhsitajckytscc.public.blob.vercel-storage.com/hero-video-final.mp4" type="video/mp4" />
+          <source src="https://asqhsitajckytscc.public.blob.vercel-storage.com/freecompress-hero-video-smaller.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* Dark overlay */}
