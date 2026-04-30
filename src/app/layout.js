@@ -34,7 +34,6 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} bg-background text-foreground`}>
         <Header />
         <main>{children}</main>
-        <Footer />
       </body>
     </html>
   );
