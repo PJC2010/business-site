@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react';
-import { ArrowUp, Mail, Linkedin, Github, Twitter } from 'lucide-react';
+import { ArrowUp, Mail, Linkedin, Github, Twitter, Instagram } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -21,39 +21,16 @@ const Footer = () => {
               Castillo & Co. LLC
             </h2>
             <p className="text-sm text-neutral-600 dark:text-neutral-400">
-              Data Science | Web Development
+              Digital Growth & Creative Strategy
             </p>
             <div className="flex space-x-4">
               <a 
-                href="mailto:castillop92@gmail.com"
+                href="mailto:pc@castilloandco.net"
                 className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 transition-colors"
               >
                 <Mail className="w-5 h-5" />
               </a>
-              <a 
-                href="https://linkedin.com/in/yourprofile"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a 
-                href="https://github.com/yourprofile"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 transition-colors"
-              >
-                <Github className="w-5 h-5" />
-              </a>
-              <a 
-                href="https://twitter.com/yourprofile"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 transition-colors"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
+              
             </div>
           </div>
 
@@ -63,7 +40,7 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className="space-y-2">
-              {['About', 'Services', 'Portfolio', 'Contact'].map((item) => (
+              {['About', 'Services', 'Contact'].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase()}`}
@@ -83,10 +60,10 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               {[
-                'Data Analysis',
-                'Machine Learning',
-                'Web Development',
-                'Data Engineering',
+                'Web Design',
+                'Social Strategy',
+                'Content Creation',
+                'AI Automation',
                 'Consulting'
               ].map((service) => (
                 <li key={service}>
@@ -108,13 +85,13 @@ const Footer = () => {
             </h3>
             <div className="space-y-2">
               <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                Available for freelance projects and full-time opportunities
+                Helping businesses and creators scale their digital influence.
               </p>
               <a
-                href="mailto:castillop92@gmail.com"
+                href="mailto:pc@castilloandco.net"
                 className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 block transition-colors"
               >
-                castillop92@gmail.com
+                pc@castilloandco.net
               </a>
               
             </div>

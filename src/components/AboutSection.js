@@ -1,34 +1,15 @@
 import React from 'react';
-import Image from 'next/image';
-import { LineChart, Code, Database } from 'lucide-react';
+import { Layout, Share2, Sparkles } from 'lucide-react';
 
 const AboutSection = () => {
-  const services = [
-    {
-      icon: <LineChart className="w-6 h-6" />,
-      title: "Data Science & Analytics",
-      description: "Transforming raw data into actionable insights through statistical analysis, machine learning, and predictive modeling."
-    },
-    {
-      icon: <Code className="w-6 h-6" />,
-      title: "Web Development",
-      description: "Building responsive web applications and interactive dashboards using modern frameworks and technologies."
-    },
-    {
-      icon: <Database className="w-6 h-6" />,
-      title: "Data Engineering",
-      description: "Creating efficient data pipelines, ETL processes, and database architectures for scalable solutions."
-    }
-  ];
-
   return (
     <section id="about" className="py-24 bg-neutral-100 dark:bg-neutral-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-3xl mx-auto text-center">
           
-          {/* Text Content (no changes) */}
+          {/* Text Content */}
           <div className="space-y-8">
-            <div>
+            <div className="flex flex-col items-center">
               <h2 className="text-3xl font-light text-neutral-900 dark:text-neutral-100 mb-4">
                 About Us
               </h2>
@@ -36,23 +17,23 @@ const AboutSection = () => {
             </div>
             
             <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              As a dedicated team of Data Scientists and Web Developers, we architect and build comprehensive data-driven solutions. Our proficiency lies in translating complex business problems into robust machine learning models and intuitive web applications, managing the entire lifecycle from data ingestion to final deployment.
+              We are a creative agency dedicated to helping small businesses and content creators thrive in the digital age. Our mission is to bridge the gap between creative vision and technical execution, providing the tools and strategies needed to build a lasting online presence.
             </p>
             
             <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-  We specialize in creating predictive models and interactive data visualizations that empower organizations to make smarter, data-informed decisions. Whether you are a small business needing your first data dashboard or a large enterprise looking to deploy a scalable ML pipeline, we have the expertise to deliver robust and reliable solutions.
-</p>
+              Whether you're looking to launch a high-converting website, grow your social media audience, or automate your business workflows, we provide tailored solutions that deliver real results. We believe in the power of visual storytelling combined with data-driven growth strategies to help you reach your full potential.
+            </p>
 
             <div className="space-y-4">
               <h3 className="text-sm uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
-                Technical Expertise
+                Core Expertise
               </h3>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap justify-center gap-2">
                 {[
-                  "Python", "R", "SQL", "JavaScript",
-                  "React", "Node.js", "Machine Learning",
-                  "Data Visualization", "Statistical Analysis",
-                  "ETL", "AWS", "Git"
+                  "Web Design", "Social Media Strategy", "Content Creation",
+                  "Brand Identity", "SEO", "UI/UX Design", "Business Automation",
+                  "AI Tooling", "Digital Marketing", "Video Editing",
+                  "Analytics", "Growth Hacking"
                 ].map((skill, index) => (
                   <span 
                     key={index}
@@ -63,18 +44,6 @@ const AboutSection = () => {
                   </span>
                 ))}
               </div>
-            </div>
-          </div>
-
-          {/* Image Area */}
-          <div className="relative flex items-center justify-center">
-             <div className="relative w-full max-w-sm">
-                <div className="aspect-square bg-neutral-200 dark:bg-neutral-800 relative p-8 rounded-full overflow-hidden">
-                    
-                </div>
-                {/* 2. Adjusted decorative borders to match the smaller frame */}
-                <div className="absolute -bottom-2 -right-2 w-48 h-48 border border-neutral-900 dark:border-neutral-100"></div>
-                <div className="absolute -top-2 -left-2 w-24 h-24 border border-neutral-900 dark:border-neutral-100"></div>
             </div>
           </div>
         </div>

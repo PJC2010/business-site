@@ -24,12 +24,12 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 px-4 animate-fade-in">
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-primary tracking-tight">
-          Professional Data & Web
+          Elevate Your Digital
           <br />
-          Solutions for Your Business.
+          Presence & Influence.
         </h1>
         <p className="mt-6 max-w-2xl mx-auto text-lg text-secondary">
-          At Castillo & Co., we specialize in helping individuals and small companies grow through custom web applications and actionable data insights.
+          At Castillo & Co., we empower small businesses and content creators to scale through strategic web design, social media growth, and intelligent automation.
         </p>
         <div className="mt-10 flex justify-center gap-x-6">
           <a href="#about" className="px-8 py-3 bg-primary text-background font-semibold hover:bg-foreground transition-colors">

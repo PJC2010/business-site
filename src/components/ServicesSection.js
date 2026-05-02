@@ -1,86 +1,86 @@
 import React from 'react';
 import { 
-  LineChart, 
-  Code, 
-  Database, 
-  Microscope, 
-  Globe, 
-  BarChart3,
-  Brain,
-  TabletSmartphone,
-  GitBranch
+  Layout, 
+  Share2, 
+  Video, 
+  Zap, 
+  TrendingUp, 
+  Lightbulb,
+  Globe,
+  Monitor,
+  Smartphone,
+  Sparkles
 } from 'lucide-react';
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: <LineChart className="w-8 h-8" />,
-      title: "Data Analysis & Visualization",
-      description: "Transform your raw data into compelling visual stories and actionable insights.",
+      icon: <Layout className="w-8 h-8" />,
+      title: "Web Design & Development",
+      description: "Custom, high-performing websites designed to convert visitors into loyal customers.",
       features: [
-        "Statistical Analysis & Reporting",
-        "Interactive Dashboards",
-        "Custom Data Visualizations",
-        "Business Intelligence Solutions"
-      ],
-      primaryService: true
-    },
-    // In your services array within ServicesSection.js
-{
-  icon: <Brain className="w-8 h-8" />,
-  title: "Machine Learning Solutions",
-  // UPDATED DESCRIPTION
-  description: "From automating routine tasks to uncovering predictive insights, we build and deploy scalable machine learning models that boost efficiency and create a competitive advantage.",
-  features: [
-    "Predictive Modeling (Churn, Sales Forecasting)", // Make it specific
-    "Process Automation & Optimization", // Appeals to large orgs
-    "Natural Language Processing (NLP)",
-    "Custom AI Tool Development" // Appeals to small businesses
-  ]
-},
-    {
-      icon: <Code className="w-8 h-8" />,
-      title: "Web Application Development",
-      description: "Custom web applications that bring your data solutions to life.",
-      features: [
-        "Full-Stack Development",
-        "React Applications",
-        "API Development",
-        "Database Integration"
+        "Responsive Landing Pages",
+        "E-commerce Solutions",
+        "SEO Optimization",
+        "Professional Portfolios"
       ],
       primaryService: true
     },
     {
-      icon: <Database className="w-8 h-8" />,
-      title: "Data Engineering",
-      description: "Build robust data pipelines and infrastructure.",
+      icon: <Share2 className="w-8 h-8" />,
+      title: "Social Media Strategy",
+      description: "Data-driven strategies to grow your presence and engage your community across all platforms.",
       features: [
-        "ETL Pipeline Development",
-        "Database Design",
-        "Data Warehousing",
-        "Cloud Integration"
+        "Content Planning & Scheduling",
+        "Audience Growth Tactics",
+        "Platform-Specific Optimization",
+        "Engagement Strategies"
+      ],
+      primaryService: true
+    },
+    {
+      icon: <Video className="w-8 h-8" />,
+      title: "Content Creation & Branding",
+      description: "Visual storytelling that resonates with your audience and builds a memorable brand identity.",
+      features: [
+        "Short-form Video Editing",
+        "Brand Identity Design",
+        "Creative Direction",
+        "Digital Asset Creation"
+      ],
+      primaryService: true
+    },
+    {
+      icon: <Zap className="w-8 h-8" />,
+      title: "AI & Business Automation",
+      description: "Streamline your workflows and save time with intelligent automation and AI-powered tools.",
+      features: [
+        "Automated Customer Replies",
+        "Workflow Optimization",
+        "AI Tool Integration",
+        "Task Automation"
       ]
     },
     {
-      icon: <TabletSmartphone className="w-8 h-8" />,
-      title: "Interactive Dashboards",
-      description: "Real-time data monitoring and reporting solutions.",
+      icon: <TrendingUp className="w-8 h-8" />,
+      title: "Analytics & Growth Tracking",
+      description: "Clear insights into your performance to help you make informed decisions for scaling.",
       features: [
-        "Custom KPI Dashboards",
-        "Real-time Analytics",
-        "Mobile-Responsive Design",
-        "User-Friendly Interface"
+        "Social Performance Metrics",
+        "Conversion Rate Tracking",
+        "Audience Insights",
+        "Growth Forecasting"
       ]
     },
     {
-      icon: <GitBranch className="w-8 h-8" />,
-      title: "Consulting & Training",
-      description: "Expert guidance and knowledge transfer.",
+      icon: <Lightbulb className="w-8 h-8" />,
+      title: "Digital Business Consulting",
+      description: "Strategic guidance to help you navigate the digital landscape and scale your influence.",
       features: [
-        "Technical Consultation",
-        "Team Training",
-        "Best Practices Implementation",
-        "Process Optimization"
+        "Monetization Strategies",
+        "Brand Positioning",
+        "Product Launch Support",
+        "Digital Workflow Audits"
       ]
     }
   ];
@@ -91,11 +91,11 @@ const ServicesSection = () => {
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-20">
           <h2 className="text-3xl font-light text-neutral-900 dark:text-neutral-100 mb-4">
-            Services Offered
+            Digital Growth Services
           </h2>
           <div className="w-16 h-px bg-neutral-900 dark:bg-neutral-100 mx-auto mb-6"></div>
           <p className="text-neutral-600 dark:text-neutral-400">
-            Comprehensive data science and web development solutions tailored to your needs
+            Tailored solutions for small businesses, creators, and digital entrepreneurs looking to scale their impact.
           </p>
         </div>
 
@@ -161,12 +161,12 @@ const ServicesSection = () => {
         {/* Call to Action */}
         <div className="mt-20 text-center">
           <p className="text-neutral-600 dark:text-neutral-400 mb-6">
-            Looking for a custom solution? Let's discuss your specific needs.
+            Ready to take your digital presence to the next level?
           </p>
           <button className="px-8 py-3 border border-neutral-300 dark:border-neutral-700 
                            hover:border-neutral-900 dark:hover:border-neutral-100 
                            text-neutral-900 dark:text-neutral-100 transition-colors duration-300">
-            Schedule a Consultation
+            Book a Strategy Call
           </button>
         </div>
       </div>
