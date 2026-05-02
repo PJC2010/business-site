@@ -24,19 +24,19 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 px-4 animate-fade-in">
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-primary tracking-tight">
-          Data-Driven Solutions,
+          Professional Data & Web
           <br />
-          Engineered for Impact.
+          Solutions for Your Business.
         </h1>
         <p className="mt-6 max-w-2xl mx-auto text-lg text-secondary">
-          I transform complex data into functional, intelligent web applications that drive business growth and operational efficiency.
+          At Castillo & Co., we specialize in helping individuals and small companies grow through custom web applications and actionable data insights.
         </p>
         <div className="mt-10 flex justify-center gap-x-6">
-          <a href="#projects" className="px-8 py-3 bg-primary text-background font-semibold hover:bg-foreground transition-colors">
-            View My Work
+          <a href="#about" className="px-8 py-3 bg-primary text-background font-semibold hover:bg-foreground transition-colors">
+            Our Approach
           </a>
           <a href="#contact" className="px-8 py-3 text-primary font-semibold border border-border hover:bg-card transition-colors">
-            Get In Touch
+            Free Consultation
           </a>
         </div>
       </div>

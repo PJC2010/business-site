@@ -30,7 +30,7 @@ const ServicesSection = () => {
   icon: <Brain className="w-8 h-8" />,
   title: "Machine Learning Solutions",
   // UPDATED DESCRIPTION
-  description: "From automating routine tasks to uncovering predictive insights, I build and deploy scalable machine learning models that boost efficiency and create a competitive advantage.",
+  description: "From automating routine tasks to uncovering predictive insights, we build and deploy scalable machine learning models that boost efficiency and create a competitive advantage.",
   features: [
     "Predictive Modeling (Churn, Sales Forecasting)", // Make it specific
     "Process Automation & Optimization", // Appeals to large orgs

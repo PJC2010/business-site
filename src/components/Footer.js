@@ -18,10 +18,10 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-4">
             <h2 className="text-xl font-light text-neutral-900 dark:text-neutral-100">
-              Pete Castillo
+              Castillo & Co. LLC
             </h2>
             <p className="text-sm text-neutral-600 dark:text-neutral-400">
-              Data Scientist | Web Developer
+              Data Science | Web Development
             </p>
             <div className="flex space-x-4">
               <a 
@@ -127,7 +127,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex justify-between items-center">
             <p className="text-sm text-neutral-600 dark:text-neutral-400">
-              © {currentYear} Pete Castillo. All rights reserved.
+              © {currentYear} Castillo & Co. LLC. All rights reserved.
             </p>
             
             <button

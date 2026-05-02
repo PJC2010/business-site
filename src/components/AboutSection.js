@@ -30,17 +30,17 @@ const AboutSection = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl font-light text-neutral-900 dark:text-neutral-100 mb-4">
-                About Me
+                About Us
               </h2>
               <div className="w-16 h-px bg-neutral-900 dark:bg-neutral-100"></div>
             </div>
             
             <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              As a Data Scientist with deep expertise in full-stack web development, I architect and build comprehensive data-driven solutions. My proficiency lies in translating complex business problems into robust machine learning models and intuitive web applications, managing the entire lifecycle from data ingestion to final deployment.
+              As a dedicated team of Data Scientists and Web Developers, we architect and build comprehensive data-driven solutions. Our proficiency lies in translating complex business problems into robust machine learning models and intuitive web applications, managing the entire lifecycle from data ingestion to final deployment.
             </p>
             
             <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-  I specialize in creating predictive models and interactive data visualizations that empower organizations to make smarter, data-informed decisions. Whether you are a small business needing your first data dashboard or a large enterprise looking to deploy a scalable ML pipeline, I have the expertise to deliver robust and reliable solutions.
+  We specialize in creating predictive models and interactive data visualizations that empower organizations to make smarter, data-informed decisions. Whether you are a small business needing your first data dashboard or a large enterprise looking to deploy a scalable ML pipeline, we have the expertise to deliver robust and reliable solutions.
 </p>
 
             <div className="space-y-4">
@@ -70,14 +70,7 @@ const AboutSection = () => {
           <div className="relative flex items-center justify-center">
              <div className="relative w-full max-w-sm">
                 <div className="aspect-square bg-neutral-200 dark:bg-neutral-800 relative p-8 rounded-full overflow-hidden">
-                    <Image
-                        src="/headshot_2.jpg"
-                        alt="A professional headshot"
-                        layout="fill"
-                        objectFit="revert-layer"
-                        // 1. ADD `object-top` to the className
-                        className="z-10 object-top"
-                    />
+                    
                 </div>
                 {/* 2. Adjusted decorative borders to match the smaller frame */}
                 <div className="absolute -bottom-2 -right-2 w-48 h-48 border border-neutral-900 dark:border-neutral-100"></div>

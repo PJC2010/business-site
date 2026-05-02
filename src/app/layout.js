@@ -7,15 +7,15 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   // Core metadata
-  title: "Pete Castillo | Data Scientist & Web Developer",
-  description: "I help businesses grow by building custom web applications, intuitive dashboards, and data-driven solutions. Based in Atascocita, TX.",
+  title: "Castillo & Co. LLC | Data & Web Solutions",
+  description: "Empowering individuals and small businesses with custom web applications, intuitive dashboards, and data-driven insights.",
   
   // Open Graph (OG) metadata for social sharing
   openGraph: {
-    title: "Pete Castillo | Data Scientist & Web Developer",
-    description: "Data-driven solutions engineered for impact.",
-    url: 'https://castillopete.com',
-    siteName: 'Pete Castillo Portfolio',
+    title: "Castillo & Co. LLC | Data & Web Solutions",
+    description: "Data-driven solutions engineered for your business impact.",
+    url: 'https://castilloandco.com',
+    siteName: 'Castillo & Co. LLC',
     images: [
       {
         url: 'public/logo-share.png', // Points to the image in the 'public' folder

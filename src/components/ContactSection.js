@@ -15,7 +15,7 @@ const ContactSection = () => {
           </h2>
           <div className="w-16 h-px bg-neutral-900 dark:bg-neutral-100 mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-neutral-600 dark:text-neutral-400">
-            I'm currently available for new projects and consulting opportunities. If you have a challenge in mind, I'd love to hear about it.
+            We are currently available for new projects and consulting opportunities. If you have a challenge in mind, we'd love to hear about it.
           </p>
         </div>
 
@@ -26,7 +26,7 @@ const ContactSection = () => {
             className="group w-full sm:w-auto px-8 py-4 bg-neutral-900 dark:bg-neutral-100 text-neutral-100 dark:text-neutral-900 font-light flex items-center justify-center gap-3 transition-all duration-300 transform hover:scale-105"
           >
             <Mail className="w-5 h-5" />
-            <span>Send me an Email</span>
+            <span>Send us an Email</span>
           </a>
           
           <a
@@ -43,7 +43,7 @@ const ContactSection = () => {
         {/* Secondary Social Links */}
         <div className="flex justify-center items-center space-x-6">
             <p className="text-sm text-neutral-500 dark:text-neutral-400">
-              Find me on Github
+              Find us on Github
             </p>
             <a 
               href="https://github.com/PJC2010" 
