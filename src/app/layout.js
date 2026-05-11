@@ -18,9 +18,9 @@ export const metadata = {
     siteName: 'Castillo & Co. LLC',
     images: [
       {
-        url: 'public/logo-share.png', // Points to the image in the 'public' folder
-        width: 1200,
-        height: 630,
+        url: '/cc_logo.png', // Points to the image in the 'public' folder
+        width: 1024,
+        height: 1024,
       },
     ],
     locale: 'en_US',

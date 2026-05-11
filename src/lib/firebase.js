@@ -12,16 +12,26 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-// Initialize Firebase
-let app;
-if (!getApps().length) {
-  app = initializeApp(firebaseConfig);
-} else {
-  app = getApps()[0];
+// Defensive check for config
+if (!firebaseConfig.projectId) {
+  console.error("Firebase Error: NEXT_PUBLIC_FIREBASE_PROJECT_ID is missing from environment variables.");
 }
 
-const auth = getAuth(app);
-const db = getFirestore(app);
-const storage = getStorage(app);
+// Initialize Firebase
+let app;
+try {
+  if (!getApps().length) {
+    app = initializeApp(firebaseConfig);
+    console.log("Firebase initialized successfully");
+  } else {
+    app = getApps()[0];
+  }
+} catch (error) {
+  console.error("Firebase initialization failed:", error);
+}
+
+const auth = app ? getAuth(app) : null;
+const db = app ? getFirestore(app) : null;
+const storage = app ? getStorage(app) : null;
 
 export { auth, db, storage };
