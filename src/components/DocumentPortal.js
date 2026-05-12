@@ -35,6 +35,7 @@ export default function DocumentPortal() {
   const [docsExpanded, setDocsExpanded] = useState(false);
   const [portalData, setPortalData] = useState(null);
   const [showSignOutModal, setShowSignOutModal] = useState(false);
+  const [signingOut, setSigningOut] = useState(false);
 
   useEffect(() => {
     let unsubPortal = null;
@@ -110,12 +111,14 @@ export default function DocumentPortal() {
   };
 
   const handleSignOut = async () => {
+    setSigningOut(true);
     try {
-      await auth.signOut();
+      if (auth) await auth.signOut();
       await fetch('/api/logout', { method: 'POST' });
-      window.location.href = '/logged-out';
     } catch (error) {
       console.error('Logout failed:', error);
+    } finally {
+      window.location.href = '/logged-out';
     }
   };
 
@@ -296,9 +299,10 @@ export default function DocumentPortal() {
               </button>
               <button
                 onClick={handleSignOut}
-                className="flex-1 py-2.5 bg-white text-black rounded-lg hover:bg-neutral-200 transition-all text-sm font-medium"
+                disabled={signingOut}
+                className="flex-1 py-2.5 bg-white text-black rounded-lg hover:bg-neutral-200 transition-all text-sm font-medium disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Sign Out
+                {signingOut ? 'Signing out…' : 'Sign Out'}
               </button>
             </div>
           </div>
