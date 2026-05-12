@@ -71,7 +71,7 @@ export default function DocumentPortal() {
     try {
       await auth.signOut();
       await fetch('/api/logout', { method: 'POST' });
-      window.location.href = '/login';
+      window.location.href = '/logged-out';
     } catch (error) {
       console.error("Logout failed:", error);
     }
