@@ -43,11 +43,18 @@ export default function DocumentPortal() {
       if (currentUser) {
         fetchDocuments(currentUser.uid);
 
-        // Live listener on clients/{uid} in Firestore
-        const clientRef = doc(db, 'clients', currentUser.uid);
-        unsubPortal = onSnapshot(clientRef, (snap) => {
-          setPortalData(snap.exists() ? snap.data() : null);
-        });
+        if (db) {
+          try {
+            const clientRef = doc(db, 'clients', currentUser.uid);
+            unsubPortal = onSnapshot(
+              clientRef,
+              (snap) => setPortalData(snap.exists() ? snap.data() : null),
+              (err) => console.error('Firestore snapshot error:', err)
+            );
+          } catch (err) {
+            console.error('Firestore setup error:', err);
+          }
+        }
       } else {
         setLoading(false);
       }
