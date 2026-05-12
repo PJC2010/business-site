@@ -34,6 +34,7 @@ export default function DocumentPortal() {
   const [loading, setLoading] = useState(true);
   const [docsExpanded, setDocsExpanded] = useState(false);
   const [portalData, setPortalData] = useState(null);
+  const [showSignOutModal, setShowSignOutModal] = useState(false);
 
   useEffect(() => {
     let unsubPortal = null;
@@ -157,7 +158,7 @@ export default function DocumentPortal() {
           <p className="text-secondary mt-1 text-sm">Here's what's happening with your account.</p>
         </div>
         <button
-          onClick={handleSignOut}
+          onClick={() => setShowSignOutModal(true)}
           className="self-start sm:self-auto px-4 py-2 border border-border rounded-lg text-secondary hover:text-primary hover:border-neutral-600 transition-all text-sm"
         >
           Sign Out
@@ -276,6 +277,33 @@ export default function DocumentPortal() {
           </div>
         )}
       </div>
+
+      {/* Sign Out Confirmation Modal */}
+      {showSignOutModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setShowSignOutModal(false)} />
+          <div className="relative bg-card border border-border rounded-2xl p-8 max-w-sm w-full shadow-2xl">
+            <h2 className="text-xl font-bold text-primary mb-2">Sign out?</h2>
+            <p className="text-secondary text-sm mb-8">
+              You'll need to sign back in to access your portal.
+            </p>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setShowSignOutModal(false)}
+                className="flex-1 py-2.5 border border-border rounded-lg text-secondary hover:text-primary hover:border-neutral-600 transition-all text-sm font-medium"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleSignOut}
+                className="flex-1 py-2.5 bg-white text-black rounded-lg hover:bg-neutral-200 transition-all text-sm font-medium"
+              >
+                Sign Out
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
     </div>
   );
