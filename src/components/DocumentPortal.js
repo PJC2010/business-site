@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { auth, db, storage } from '@/lib/firebase';
+import SocialDashboard from '@/components/SocialDashboard';
 import { ref, uploadBytes, listAll, getDownloadURL, getMetadata } from 'firebase/storage';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { onAuthStateChanged } from 'firebase/auth';
@@ -127,7 +128,8 @@ export default function DocumentPortal() {
     ? new Date(user.metadata.lastSignInTime).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
     : '—';
 
-  const activeProjects = portalData?.activeProjects ?? 1;
+  const activeProjects       = portalData?.activeProjects ?? 1;
+  const showSocialDashboard  = portalData?.showSocialDashboard ?? false;
   const phases = portalData?.phases ?? [
     { phase: 'Discovery & Strategy', status: 'completed' },
     { phase: 'Design & Development', status: 'active' },
@@ -280,6 +282,13 @@ export default function DocumentPortal() {
           </div>
         )}
       </div>
+
+      {/* Social Media Revenue Dashboard */}
+      {showSocialDashboard && (
+        <div className="border-t border-border pt-8">
+          <SocialDashboard />
+        </div>
+      )}
 
       {/* Sign Out Confirmation Modal */}
       {showSignOutModal && (
